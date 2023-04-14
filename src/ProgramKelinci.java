@@ -11,6 +11,19 @@ public class ProgramKelinci {
         double x2 = input.nextDouble();
         double y2 = input.nextDouble();
 
-       
+        if (y1 == y2) {
+            if (x1 == x2) {
+                System.out.println("YES");
+            } else {
+                System.out.println("NO");
+            }
+        } else {
+            double t = (x2 - x1) / (y1 - y2);
+            if (t >= 0) {
+                System.out.println("YES");
+            } else {
+                System.out.println("NO");
+            }
+        }
     }
 }
